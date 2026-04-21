@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#1e40af" opacity="0.1" stroke="#1e40af" stroke-width="2"/>
+
+  <!-- Shield shape -->
+  <path d="M 100 30 L 140 50 L 140 90 Q 140 130 100 150 Q 60 130 60 90 L 60 50 Z" fill="#1e40af" stroke="#0891b2" stroke-width="2"/>
+
+  <!-- Checkmark -->
+  <path d="M 85 105 L 95 115 L 120 85" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Text -->
+  <text x="100" y="175" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">ApexScoop</text>
+</svg>
