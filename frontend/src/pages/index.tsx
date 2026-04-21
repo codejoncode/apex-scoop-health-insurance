@@ -66,6 +66,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Calculator Tool Section */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg p-12">
+            <h2 className="text-4xl font-bold mb-4">How Much Coverage Do You Need?</h2>
+            <p className="text-xl mb-8 text-blue-100">
+              Use our free Life Insurance Needs Calculator to discover the exact coverage amount to protect your family's financial future.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/calculator" className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                Try Calculator Now
+              </Link>
+              <Link href="/leads" className="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition-colors">
+                Get Quotes
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-primary text-white py-16">
         <div className="max-w-6xl mx-auto px-4 text-center">

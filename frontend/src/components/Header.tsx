@@ -26,6 +26,7 @@ export default function Header() {
         </Link>
 
         <div className="flex items-center space-x-6">
+          <Link href="/calculator" className="hover:text-primary">Calculator</Link>
           <Link href="/blog" className="hover:text-primary">Blog</Link>
           <Link href="/leads" className="hover:text-primary">Get Quotes</Link>
 
