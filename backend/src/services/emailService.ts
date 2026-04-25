@@ -40,6 +40,36 @@ export const emailService = {
     }
   },
 
+  async sendEscalationNotification(lead: Lead, question: string, sessionId: string) {
+    try {
+      const htmlContent = `
+        <h2>Escalated Question - Needs SME Response</h2>
+        <p><strong>Name:</strong> ${lead.name}</p>
+        <p><strong>Email:</strong> ${lead.email}</p>
+        <p><strong>Phone:</strong> ${lead.phone || 'N/A'}</p>
+        <p><strong>Question:</strong></p>
+        <p>${question.replace(/\n/g, '<br>')}</p>
+        <p><strong>Chat Session:</strong> ${sessionId}</p>
+        <p><strong>Submitted at:</strong> ${new Date(lead.created_at).toLocaleString()}</p>
+        <hr>
+        <p><a href="${process.env.FRONTEND_URL}/admin/chat">View Chat Session</a></p>
+        <p>Please research this question and respond to the customer directly.</p>
+      `;
+
+      await transporter.sendMail({
+        from: process.env.EMAIL_FROM,
+        to: process.env.EMAIL_TO,
+        subject: `Escalated Question: ${lead.name}`,
+        html: htmlContent,
+      });
+
+      console.log(`Escalation email sent for lead ${lead.id}`);
+    } catch (error) {
+      console.error('Error sending escalation email:', error);
+      throw error;
+    }
+  },
+
   async sendLeadNotification(email: string, subject: string, html: string) {
     try {
       await transporter.sendMail({

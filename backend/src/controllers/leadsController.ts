@@ -4,11 +4,12 @@ import { LeadModel } from '../models/lead.js';
 import { emailService } from '../services/emailService.js';
 import { AuthRequest } from '../middleware/auth.js';
 
-const createLeadSchema = z.object({
+const createEscalationSchema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
   phone: z.string().optional(),
-  message: z.string().optional(),
+  question: z.string().min(1),
+  sessionId: z.string(),
 });
 
 export const leadsController = {
@@ -30,6 +31,34 @@ export const leadsController = {
         res.status(400).json({ error: error.errors });
       } else {
         res.status(500).json({ error: 'Failed to create lead' });
+      }
+    }
+  },
+
+  async createEscalation(req: AuthRequest, res: Response) {
+    try {
+      const validated = createEscalationSchema.parse(req.body);
+      const lead = await LeadModel.create({
+        name: validated.name,
+        email: validated.email,
+        phone: validated.phone,
+        message: `Escalated question: ${validated.question}`,
+        status: 'escalated'
+      });
+
+      // Send escalation email notification
+      try {
+        await emailService.sendEscalationNotification(lead, validated.question, validated.sessionId);
+      } catch (emailError) {
+        console.error('Failed to send escalation email:', emailError);
+      }
+
+      res.status(201).json({ message: 'Thank you! A subject matter expert will research your question and get back to you soon.' });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        res.status(400).json({ error: error.errors });
+      } else {
+        res.status(500).json({ error: 'Failed to submit escalation' });
       }
     }
   },

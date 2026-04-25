@@ -33,6 +33,16 @@ export const blogAPI = {
   delete: (id: number) => api.delete(`/api/blog/${id}`),
 };
 
+export const kbAPI = {
+  getAll: () => api.get('/api/chat/kb'),
+  create: (data: { keywords: string[]; answer: string; active?: boolean; sort_order?: number }) =>
+    api.post('/api/chat/kb', data),
+  update: (id: number, data: Partial<{ keywords: string[]; answer: string; active: boolean; sort_order: number }>) =>
+    api.put(`/api/chat/kb/${id}`, data),
+  delete: (id: number) => api.delete(`/api/chat/kb/${id}`),
+  seed: (force = false) => api.post('/api/chat/kb/seed', { force }),
+};
+
 export const authAPI = {
   login: (email: string, password: string) =>
     api.post('/api/auth/login', { email, password }),

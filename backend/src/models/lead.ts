@@ -6,7 +6,7 @@ export interface Lead {
   email: string;
   phone?: string;
   message?: string;
-  status: 'new' | 'contacted' | 'converted' | 'rejected';
+  status: 'new' | 'contacted' | 'converted' | 'rejected' | 'escalated';
   notes?: string;
   created_at: Date;
   updated_at: Date;

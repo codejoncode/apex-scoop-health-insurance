@@ -7,6 +7,9 @@ const router = Router();
 // Public route - create lead
 router.post('/', leadsController.create);
 
+// Public route - escalation contact submission
+router.post('/escalation', leadsController.createEscalation);
+
 // Protected routes - admin only
 router.get('/', authMiddleware, leadsController.getAll);
 router.get('/stats', authMiddleware, leadsController.getStats);
