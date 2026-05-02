@@ -51,4 +51,41 @@ export const authAPI = {
   me: () => api.get('/api/auth/me'),
 };
 
+export const callsAPI = {
+  start: (scriptTypeId: number, leadId?: number) => api.post('/api/calls', { scriptTypeId, leadId }),
+  list: (params?: { outcome?: string }) => api.get('/api/calls', { params }),
+  stats: () => api.get('/api/calls/stats'),
+  detail: (id: string) => api.get(`/api/calls/${id}`),
+  logStep: (callId: string, scriptSectionId: number) => api.post(`/api/calls/${callId}/steps`, { scriptSectionId }),
+  logRebuttal: (callId: string, data: { rebuttalId: number; objectionTypeId: string; scriptSectionId?: number }) =>
+    api.post(`/api/calls/${callId}/rebuttals`, data),
+  end: (callId: string, outcome: string, notes?: string) => api.post(`/api/calls/${callId}/end`, { outcome, notes }),
+  addCustomRebuttal: (callId: string, data: { objectionPhrase: string; yourResponse: string; scriptSectionId?: number }) =>
+    api.post(`/api/calls/${callId}/rebuttals/custom`, data),
+};
+
+export const objectionsAPI = {
+  list: () => api.get('/api/objections'),
+  adminAll: () => api.get('/api/objections/admin/all'),
+  stats: () => api.get('/api/objections/stats'),
+  updateRebuttal: (id: number, data: object) => api.patch(`/api/objections/rebuttals/${id}`, data),
+};
+
+export const underwritingAPI = {
+  build: (data: { heightFeet: number; heightInches: number; weight: number; age: number }) =>
+    api.post('/api/underwriting/build', data),
+  searchConditions: (q: string) => api.get(`/api/underwriting/conditions?q=${encodeURIComponent(q)}`),
+  searchMedications: (q: string) => api.get(`/api/underwriting/medications?q=${encodeURIComponent(q)}`),
+  assess: (data: { tRating: string; conditionIds: number[]; medicationIds: number[]; age: number }) =>
+    api.post('/api/underwriting/assess', data),
+};
+
+export const askAPI = {
+  ask: (message: string) => api.post('/api/ask', { message }),
+  submitSmeRequest: (data: object) => api.post('/api/ask/sme-request', data),
+  listSmeRequests: () => api.get('/api/ask/sme-requests'),
+  updateSmeRequest: (id: string, data: { status?: string; admin_notes?: string }) =>
+    api.patch(`/api/ask/sme-requests/${id}`, data),
+};
+
 export default api;

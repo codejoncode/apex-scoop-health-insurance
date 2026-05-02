@@ -26,9 +26,10 @@ export default function Header() {
         </Link>
 
         <div className="flex items-center space-x-6">
+          <Link href="/ask" className="hover:text-primary">Ask a Question</Link>
           <Link href="/calculator" className="hover:text-primary">Calculator</Link>
           <Link href="/blog" className="hover:text-primary">Blog</Link>
-          <Link href="/leads" className="hover:text-primary">Get Quotes</Link>
+          <Link href="/leads" className="btn-primary text-sm">Get a Quote</Link>
 
           {isLoggedIn ? (
             <>
@@ -41,7 +42,7 @@ export default function Header() {
               </button>
             </>
           ) : (
-            <Link href="/admin/login" className="btn-primary text-sm">Admin Login</Link>
+            <Link href="/admin/login" className="text-gray-500 hover:text-gray-700 text-sm">Admin</Link>
           )}
         </div>
       </nav>

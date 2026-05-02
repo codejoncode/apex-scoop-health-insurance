@@ -4,8 +4,11 @@ import { authMiddleware } from '../middleware/auth.js';
 
 const router = Router();
 
-router.post('/register', authController.register);
+// Login — public
 router.post('/login', authController.login);
+// Me — authenticated
 router.get('/me', authMiddleware, authController.me);
+// Register — LOCKED: only an existing admin can create new users
+router.post('/register', authMiddleware, authController.register);
 
 export default router;

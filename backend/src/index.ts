@@ -7,6 +7,10 @@ import blogRoutes from './routes/blog.js';
 import authRoutes from './routes/auth.js';
 import chatRoutes from './routes/chat.js';
 import dataRoutes from './routes/data.js';
+import callsRoutes from './routes/calls.js';
+import objectionsRoutes from './routes/objections.js';
+import underwritingRoutes from './routes/underwriting.js';
+import askRoutes from './routes/ask.js';
 import { setupWebSocket } from './websocket.js';
 
 dotenv.config();
@@ -27,6 +31,10 @@ app.use('/api/blog', blogRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/data', dataRoutes);
+app.use('/api/calls', callsRoutes);
+app.use('/api/objections', objectionsRoutes);
+app.use('/api/underwriting', underwritingRoutes);
+app.use('/api/ask', askRoutes);
 
 // Health check
 app.get('/health', (req, res) => {

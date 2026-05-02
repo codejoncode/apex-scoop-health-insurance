@@ -106,28 +106,53 @@ export default function DashboardPage() {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="flex justify-between items-center mb-8">
-          <h1 className="text-4xl font-bold">Lead Dashboard</h1>
-          <div className="flex items-center gap-4">
-            <a
-              href="/admin/knowledge-base"
-              className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-sm font-medium transition-colors"
-            >
-              🧠 Knowledge Base
-            </a>
-            <a
-              href="/admin/chat"
-              className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-colors"
-            >
-              💬 Live Chat
-            </a>
-            <button
-              onClick={handleLogout}
-              className="text-red-600 hover:text-red-700"
-            >
-              Logout
-            </button>
-          </div>
+        <div className="flex justify-between items-center mb-6">
+          <h1 className="text-4xl font-bold">Dashboard</h1>
+          <button onClick={handleLogout} className="text-red-600 hover:text-red-700 text-sm">Logout</button>
+        </div>
+
+        {/* Navigation tiles */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <a href="/calls/new" className="card p-4 text-center hover:shadow-md transition-shadow bg-blue-600 text-white rounded-xl">
+            <div className="text-2xl mb-1">📞</div>
+            <div className="font-bold text-sm">Start Call</div>
+            <div className="text-xs opacity-80">Run a live call session</div>
+          </a>
+          <a href="/admin/calls" className="card p-4 text-center hover:shadow-md transition-shadow rounded-xl">
+            <div className="text-2xl mb-1">📊</div>
+            <div className="font-bold text-sm">Call History</div>
+            <div className="text-xs text-gray-500">Script & outcome analytics</div>
+          </a>
+          <a href="/admin/rebuttals" className="card p-4 text-center hover:shadow-md transition-shadow rounded-xl">
+            <div className="text-2xl mb-1">💬</div>
+            <div className="font-bold text-sm">Rebuttals</div>
+            <div className="text-xs text-gray-500">Manage objection scripts</div>
+          </a>
+          <a href="/underwriting" className="card p-4 text-center hover:shadow-md transition-shadow rounded-xl">
+            <div className="text-2xl mb-1">🏥</div>
+            <div className="font-bold text-sm">Underwriting</div>
+            <div className="text-xs text-gray-500">Build rating & conditions</div>
+          </a>
+          <a href="/ask" className="card p-4 text-center hover:shadow-md transition-shadow rounded-xl">
+            <div className="text-2xl mb-1">🤖</div>
+            <div className="font-bold text-sm">Ask Assistant</div>
+            <div className="text-xs text-gray-500">AI knowledge bot</div>
+          </a>
+          <a href="/admin/sme-requests" className="card p-4 text-center hover:shadow-md transition-shadow rounded-xl">
+            <div className="text-2xl mb-1">📩</div>
+            <div className="font-bold text-sm">SME Inbox</div>
+            <div className="text-xs text-gray-500">Escalated questions</div>
+          </a>
+          <a href="/admin/chat" className="card p-4 text-center hover:shadow-md transition-shadow rounded-xl">
+            <div className="text-2xl mb-1">💬</div>
+            <div className="font-bold text-sm">Live Chat</div>
+            <div className="text-xs text-gray-500">Real-time visitor chat</div>
+          </a>
+          <a href="/admin/knowledge-base" className="card p-4 text-center hover:shadow-md transition-shadow rounded-xl">
+            <div className="text-2xl mb-1">🧠</div>
+            <div className="font-bold text-sm">Knowledge Base</div>
+            <div className="text-xs text-gray-500">Edit bot Q&A pairs</div>
+          </a>
         </div>
 
         {/* Stats */}
