@@ -88,4 +88,14 @@ export const askAPI = {
     api.patch(`/api/ask/sme-requests/${id}`, data),
 };
 
+export const webinarAPI = {
+  signup: (data: { name: string; email: string; phone?: string; topic: string }) =>
+    api.post('/api/webinars/signup', data),
+  listSignups: (params?: { topic?: string; status?: string }) =>
+    api.get('/api/webinars/signups', { params }),
+  stats: () => api.get('/api/webinars/stats'),
+  updateSignup: (id: number, data: { status?: string; notes?: string }) =>
+    api.patch(`/api/webinars/signups/${id}`, data),
+};
+
 export default api;

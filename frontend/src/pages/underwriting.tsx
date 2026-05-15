@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
 import api from '@/lib/api';
 
@@ -31,6 +32,13 @@ const BUILD_COLORS: Record<string, string> = {
 };
 
 export default function UnderwritingPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) { router.push('/admin/login'); }
+  }, [router]);
+
   const [age, setAge] = useState('');
   const [sex, setSex] = useState('');
   const [heightFeet, setHeightFeet] = useState('');

@@ -1,10 +1,16 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
 import Link from 'next/link';
 
 export default function CalculatorPage() {
+  const router = useRouter();
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) { router.push('/admin/login'); }
+  }, [router]);
   const [income, setIncome] = useState(50000);
   const [dependents, setDependents] = useState(2);
   const [mortgage, setMortgage] = useState(300000);

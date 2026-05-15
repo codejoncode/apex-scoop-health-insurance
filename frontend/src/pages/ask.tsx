@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Layout from '@/components/Layout';
 import api from '@/lib/api';
 
@@ -13,6 +14,13 @@ interface Message {
 interface SmeForm { name: string; email: string; phone: string; bestTime: string; }
 
 export default function AskPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) { router.push('/admin/login'); }
+  }, [router]);
+
   const [messages, setMessages] = useState<Message[]>([{
     role: 'bot',
     content: "Hi! I'm the ApexScoop assistant. I answer questions about insurance benefits, qualifying conditions, and coverage options — using Jonathan's actual AIL documentation. What's your question today?",

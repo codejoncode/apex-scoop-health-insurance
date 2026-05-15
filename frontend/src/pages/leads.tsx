@@ -1,9 +1,16 @@
 'use client';
 
 import Layout from '@/components/Layout';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 export default function LeadsPage() {
+  const router = useRouter();
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) { router.push('/admin/login'); }
+  }, [router]);
+
   const [submitted, setSubmitted] = useState(false);
 
   return (
