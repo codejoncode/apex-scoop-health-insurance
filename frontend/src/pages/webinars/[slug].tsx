@@ -201,6 +201,12 @@ export default function WebinarPage({ webinar, slug }: Props) {
             <h2 className="text-xl sm:text-2xl font-bold mb-2">Reserve Your Spot</h2>
             <p className="text-gray-500 text-sm">Free. No obligation. Just show up ready to learn.</p>
           </div>
+          <p className="text-xs text-gray-500 text-center mb-3">
+            By submitting this form you agree to our{' '}
+            <Link href="/privacy" className="text-blue-600 hover:underline">Privacy Policy</Link>
+            {' '}and{' '}
+            <Link href="/terms" className="text-blue-600 hover:underline">Terms of Service</Link>.
+          </p>
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <iframe
               src={webinar.formSrc}

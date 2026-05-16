@@ -110,6 +110,12 @@ export default function Home() {
               No obligation. A licensed agent will reach out within 24 hours.
             </p>
           </div>
+          <p className="text-xs text-gray-500 text-center mb-3">
+            By submitting this form you agree to our{' '}
+            <Link href="/privacy" className="text-blue-600 hover:underline">Privacy Policy</Link>
+            {' '}and{' '}
+            <Link href="/terms" className="text-blue-600 hover:underline">Terms of Service</Link>.
+          </p>
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <iframe
               src={CONSULTATION_FORM_SRC}
