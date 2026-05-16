@@ -2,7 +2,7 @@ import Layout from '@/components/Layout';
 import Link from 'next/link';
 
 // TODO: Replace IN-XXXXXXX with your actual Indiana insurance license number
-const IN_LICENSE = 'IN-XXXXXXX';
+const IN_LICENSE = '3968155';
 
 export default function PrivacyPolicy() {
   return (
