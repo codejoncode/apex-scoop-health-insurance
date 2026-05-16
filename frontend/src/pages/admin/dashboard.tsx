@@ -143,11 +143,11 @@ export default function DashboardPage() {
             <div className="font-bold text-sm">SME Inbox</div>
             <div className="text-xs text-gray-500">Escalated questions</div>
           </a>
-          <a href="/admin/chat" className="card p-4 text-center hover:shadow-md transition-shadow rounded-xl">
+          <div className="card p-4 text-center rounded-xl opacity-50 cursor-not-allowed">
             <div className="text-2xl mb-1">💬</div>
             <div className="font-bold text-sm">Live Chat</div>
-            <div className="text-xs text-gray-500">Real-time visitor chat</div>
-          </a>
+            <div className="text-xs text-blue-500 font-semibold">Coming Soon</div>
+          </div>
           <a href="/admin/knowledge-base" className="card p-4 text-center hover:shadow-md transition-shadow rounded-xl">
             <div className="text-2xl mb-1">🧠</div>
             <div className="font-bold text-sm">Knowledge Base</div>
