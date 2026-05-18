@@ -51,6 +51,9 @@ export default function Header() {
           <a href="/#webinars" className="text-gray-600 hover:text-blue-700 font-medium text-sm transition-colors">
             Free Webinars
           </a>
+          <Link href="/blog" className="text-gray-600 hover:text-blue-700 font-medium text-sm transition-colors">
+            Blog
+          </Link>
           <a href="/#consultation" className="text-gray-600 hover:text-blue-700 font-medium text-sm transition-colors">
             Contact
           </a>
@@ -106,6 +109,13 @@ export default function Header() {
           >
             Free Webinars
           </a>
+          <Link
+            href="/blog"
+            onClick={closeMenu}
+            className="block text-gray-700 hover:text-blue-700 font-medium py-2.5 border-b border-gray-50 text-sm"
+          >
+            Blog
+          </Link>
           <a
             href="/#consultation"
             onClick={closeMenu}

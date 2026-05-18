@@ -53,6 +53,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400 text-sm mb-6">
               <li><a href="/#consultation" className="hover:text-white transition-colors">Book a Free Consultation</a></li>
               <li><a href="/#webinars" className="hover:text-white transition-colors">Join a Webinar</a></li>
+              <li><Link href="/blog" className="hover:text-white transition-colors">Insurance Blog</Link></li>
               <li>
                 <a href="mailto:jonathanholloway.ail@gmail.com" className="hover:text-white transition-colors">
                   jonathanholloway.ail@gmail.com
