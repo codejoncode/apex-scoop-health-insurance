@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import { POSTS, POST_SLUGS, Post } from '@/lib/posts';
+import { CALENDAR_URL } from '@/lib/config';
 
 interface Props {
   post: Post;
@@ -59,16 +60,16 @@ function BottomCTA({ post }: { post: Post }) {
         Ready to take the next step?
       </h3>
       <p className="text-blue-100 text-sm sm:text-base mb-8 max-w-xl mx-auto">
-        Reading about insurance is the first step. Understanding what it looks like for your specific
-        family — your ages, your health, your budget — takes a single conversation.
+        Reading about insurance is a great start. Understanding what it looks like for your
+        specific family — your ages, your health, your budget — takes a single 20-minute conversation.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Link
-          href="/#consultation"
+        <a
+          href={CALENDAR_URL}
           className="bg-white text-blue-800 hover:bg-blue-50 font-bold py-3 px-8 rounded-full transition-colors"
         >
-          Book a Free Consultation
-        </Link>
+          📅 Book a Free Zoom Consultation
+        </a>
         {post.webinarSlug && (
           <Link
             href={`/webinars/${post.webinarSlug}`}

@@ -394,4 +394,244 @@ export const POSTS: Record<string, Post> = {
   },
 };
 
+  'indiana-final-expense-insurance-costs-2026': {
+    title: 'Indiana Final Expense Insurance: What It Actually Costs in 2026',
+    excerpt: 'If you live in Indiana and you\'re between 50 and 80, this is what a final expense policy actually costs — and what it covers. No guesswork.',
+    date: 'May 18, 2026',
+    readTime: '5 min read',
+    category: 'Indiana · Senior Protection',
+    webinarSlug: 'final-expense-senior-protection',
+    webinarTitle: 'Final Expense & Senior Protection',
+    sections: [
+      {
+        heading: 'Why Indiana Families Are Searching for This Answer',
+        paragraphs: [
+          'Every week, families across Indiana face the same unexpected reality: a loved one passes away and the funeral home needs payment within days. The average funeral in Indiana runs between $8,000 and $12,000 when you include the burial plot, headstone, and other final arrangements. Most families are not prepared for that bill.',
+          'Final expense insurance is a small whole life policy — typically between $5,000 and $25,000 — designed specifically to cover those costs. It pays directly to your beneficiary, usually within a few days of a claim, so they can handle arrangements without dipping into savings or going into debt.',
+          'The good news: in Indiana, a licensed agent can help you get this coverage in place quickly, and in many cases the premiums are more affordable than people expect.',
+        ],
+      },
+      {
+        heading: 'What Final Expense Policies Actually Cost in Indiana',
+        paragraphs: [
+          'Premium costs depend primarily on three things: your age at the time you apply, the face amount you select, and your health at the time of underwriting. A healthy Indiana resident in their early 60s can typically secure $10,000 in coverage for well under $50 per month. A 75-year-old will pay more — but coverage is still available and still affordable for most families.',
+          'There are two underwriting paths available depending on your health history. Standard underwriting involves a more thorough application and produces lower premiums for those who qualify. Simplified underwriting — with a shorter application and no medical exam — is available for applicants with more complex health histories and still provides real, permanent coverage.',
+          'The only way to know your exact premium is to go through a brief application with a licensed agent. There is no cost and no obligation to apply.',
+        ],
+      },
+      {
+        heading: 'What Indiana Law Requires of Final Expense Policies',
+        paragraphs: [
+          'Indiana insurance law requires that all life insurance policies sold in the state be issued by a company licensed with the Indiana Department of Insurance. The agent presenting the policy must also be individually licensed in Indiana.',
+          'American Income Life Insurance Company is licensed in Indiana. Jonathan Holloway is a licensed Life, Health, and Accident Insurance Agent in Indiana. When you work with us, you\'re working with someone who operates under Indiana\'s insurance regulations and is accountable to them.',
+          'Premiums, benefit amounts, and coverage terms are all guaranteed in writing in the policy contract. Nothing changes after you sign — not the premium, not the death benefit, and not the coverage.',
+        ],
+      },
+      {
+        heading: 'The One Question Worth Answering Today',
+        paragraphs: [
+          'If you passed away this week, would your family have $8,000 to $12,000 available within 48 hours to begin making arrangements? If the honest answer is no — or even maybe — a final expense policy is worth a 20-minute conversation.',
+          'A licensed agent can walk you through exact premium quotes for your age and health situation, explain both underwriting options, and help you decide what face amount makes sense for your family. There is no cost for the conversation and no obligation to buy anything.',
+        ],
+      },
+    ],
+  },
+
+  'protect-your-family-with-2-dollars-a-day': {
+    title: 'How to Protect Your Family With $2 a Day',
+    excerpt: 'Two dollars. That\'s what a cup of coffee costs. It\'s also what a real life insurance policy costs for many families — and most people have no idea.',
+    date: 'May 17, 2026',
+    readTime: '4 min read',
+    category: 'Planning',
+    webinarSlug: 'whole-life-101',
+    webinarTitle: 'Whole Life 101',
+    sections: [
+      {
+        heading: 'The Math Most People Have Never Seen',
+        paragraphs: [
+          'Two dollars a day is $60 a month. For a healthy adult in their 20s or early 30s, $60 a month can buy a meaningful whole life insurance policy — permanent coverage with a locked-in premium, a growing cash value, and a death benefit that will never expire.',
+          'Most people assume life insurance is expensive because they\'ve never actually looked at the numbers. They picture something that costs hundreds of dollars a month and set it aside. In reality, the younger and healthier you are, the more affordable life insurance becomes — and the more coverage that $60 can buy.',
+          'By the time most people get serious about life insurance, they\'re older, possibly dealing with health issues, and the same $60 buys significantly less. The cost of waiting is real and it compounds every year.',
+        ],
+      },
+      {
+        heading: 'What $2 a Day Actually Buys',
+        paragraphs: [
+          'The exact coverage amount $60 per month purchases depends on your age, health, and the specific product. For a 28-year-old in good health, $60 a month can secure a whole life policy with a substantial death benefit — enough to cover final expenses, pay off outstanding debts, and provide meaningful financial support to a surviving spouse or children.',
+          'For someone in their 40s, the same $60 buys less coverage — but it still buys something permanent, something that builds cash value, and something that will never expire or need to be renewed.',
+          'The question isn\'t whether $60 a month is meaningful protection. It is. The question is what $60 buys for your specific age and health — and that calculation takes about 10 minutes with a licensed agent.',
+        ],
+      },
+      {
+        heading: 'The Cost of Coffee vs. the Cost of Leaving Your Family Unprotected',
+        paragraphs: [
+          'Americans spend an average of $1,000 to $2,000 per year on coffee. That\'s not a judgment — it\'s a reference point. A family that spends $3 a day on coffee and has no life insurance has made a choice, usually without realizing it.',
+          'The difference is that the coffee disappears. A life insurance policy, paid consistently over 20 years, builds cash value, maintains a permanent death benefit, and gives a family real options when they need them most.',
+          'Starting with what you can afford — even $30 or $40 a month — is always better than waiting for the "right time" to buy more. Coverage you have is infinitely more valuable than coverage you planned to get.',
+        ],
+      },
+      {
+        heading: 'How to Find Out What $2 a Day Buys for You',
+        paragraphs: [
+          'A free Zoom consultation with a licensed agent takes about 20 minutes. In that time, you\'ll know exactly what coverage your budget can buy, what the premiums look like at different face amounts, and what it would cost to add riders that enhance the policy.',
+          'There is no obligation, no sales pressure, and no requirement to buy anything. The goal is to give you the information you need to make a decision that\'s right for your family.',
+        ],
+      },
+    ],
+  },
+
+  'die-without-will-indiana': {
+    title: 'What Happens If You Die Without a Will in Indiana',
+    excerpt: 'Indiana law will decide who gets your assets, who raises your children, and how your estate is divided. Here\'s exactly what that looks like — and what you can do about it today at no cost.',
+    date: 'May 16, 2026',
+    readTime: '5 min read',
+    category: 'Indiana · Estate Planning',
+    sections: [
+      {
+        heading: 'Indiana\'s Intestate Succession Laws',
+        paragraphs: [
+          'When someone dies without a valid will in Indiana, the state\'s intestate succession laws — found in Indiana Code Title 29 — automatically determine who inherits their assets. You do not get to choose. The law chooses for you, based on a fixed hierarchy of relatives.',
+          'If you are married and have children only with your current spouse, your spouse inherits everything. If you have children from a previous relationship, the estate is split — your spouse receives one-half and your children divide the other half equally. If you are unmarried with children, your children inherit everything in equal shares. If you have no spouse and no children, the estate passes to your parents. Then to your siblings. Then to more distant relatives.',
+          'At no point in this process does the court consider what you would have wanted, who needed the money most, or what promises you may have made to specific people. The formula is applied mechanically.',
+        ],
+      },
+      {
+        heading: 'What Happens to Your Minor Children',
+        paragraphs: [
+          'If you have minor children and die without a will, an Indiana probate court will appoint a guardian to raise them. The court will consider what it determines to be in the children\'s best interest — but without a will, you have no say in that decision.',
+          'A will allows you to name a guardian of your choosing for your children. Without one, that decision goes to a judge who doesn\'t know your family, your values, or your wishes. The person the court appoints may not be who you would have chosen.',
+          'This alone is one of the most compelling reasons for any parent — regardless of the size of their estate — to have a valid will in place.',
+        ],
+      },
+      {
+        heading: 'The Free Will Kit You May Already Qualify For',
+        paragraphs: [
+          'American Income Life offers a free membership tier that includes a legally-guided Will kit at no cost. This is not a fill-in-the-blank PDF from the internet. It is a guided process that walks you through creating a valid, personalized will — covering your beneficiaries, your guardian designations for minor children, and your specific wishes.',
+          'The Will kit is included in the free membership at no charge. There is no purchase required to receive it. A licensed agent can connect you with the membership and walk you through how to use it.',
+        ],
+      },
+      {
+        heading: 'The Bigger Picture: A Will Doesn\'t Replace Life Insurance',
+        paragraphs: [
+          'A will determines where your existing assets go. Life insurance creates assets that didn\'t exist before — money your family receives specifically because you are gone.',
+          'A family with a valid will but no life insurance knows exactly who gets what when a breadwinner dies. What they don\'t have is the income replacement, mortgage payoff, or funds to cover final expenses that a life insurance policy would provide.',
+          'A complete plan addresses both. A free Zoom consultation takes 20 minutes and covers everything — what coverage your family needs, what the Will kit provides, and what additional protection makes sense for your situation.',
+        ],
+      },
+    ],
+  },
+
+  '7-biggest-mistakes-life-insurance': {
+    title: 'The 7 Biggest Mistakes People Make With Life Insurance',
+    excerpt: 'Most people who buy life insurance make at least two of these mistakes. Most people who don\'t have life insurance are making all of them.',
+    date: 'May 15, 2026',
+    readTime: '6 min read',
+    category: 'Buyer\'s Guide',
+    sections: [
+      {
+        paragraphs: [
+          'Life insurance is one of those financial products where the mistakes are invisible until it\'s too late to fix them. The policy that looked fine when you bought it turns out to be inadequate, expired, or tied to a job you left five years ago. Here are the seven mistakes that show up most often — and what to do instead.',
+        ],
+      },
+      {
+        heading: 'Mistake 1: Relying Entirely on Employer-Provided Coverage',
+        paragraphs: [
+          'Group life insurance through an employer is a nice benefit. It is not a plan. Employer coverage typically provides 1–2x your annual salary, requires no medical exam, and disappears the day you leave — whether through resignation, layoff, disability, or retirement.',
+          'You cannot predict when your employment will end. You can predict that a personal whole life policy you own will still be in force regardless of your employment status. Build your plan around coverage you control.',
+        ],
+      },
+      {
+        heading: 'Mistake 2: Waiting Until "the Right Time" to Buy',
+        paragraphs: [
+          'The right time to buy life insurance is when you are young and healthy, because that is when it costs the least and qualifies the most easily. Every year you wait, the premium for the same coverage increases. Every health change that develops — even minor ones — can affect your rate class or eligibility.',
+          '"I\'ll get around to it" is the most expensive decision most people make without realizing it.',
+        ],
+      },
+      {
+        heading: 'Mistake 3: Buying Term and Thinking the Job Is Done',
+        paragraphs: [
+          'Term insurance has its place. But many families buy a 20-year term policy, feel covered, and never revisit their insurance situation. Then the term expires at age 55 or 60, they try to buy coverage again, and discover that the premiums are now dramatically higher or that health issues have made standard coverage difficult to obtain.',
+          'A whole life base combined with term for high-need years is almost always a more complete strategy than term alone.',
+        ],
+      },
+      {
+        heading: 'Mistake 4: Not Being Completely Honest on the Application',
+        paragraphs: [
+          'The contestability period — typically the first two years of a policy — gives the insurance company the right to review the original application if a claim is filed. If they find a material misrepresentation, they can deny the claim. The people harmed are the beneficiaries.',
+          'Every diagnosis, every medication, every health history item belongs on the application. A licensed agent helps you present your health history accurately and finds the product that fits your situation honestly.',
+        ],
+      },
+      {
+        heading: 'Mistake 5: Underinsuring',
+        paragraphs: [
+          'A $10,000 policy feels like insurance. For a family with a mortgage, young children, and income that someone depends on, it is not enough. Most financial advisors suggest coverage closer to 10x annual income as a starting point — though the right number is specific to each family\'s debts, expenses, and timeline.',
+          'Calculate what your family would actually need, not what feels comfortable to pay for.',
+        ],
+      },
+      {
+        heading: 'Mistake 6: Skipping the Riders',
+        paragraphs: [
+          'The base death benefit is only part of what a life insurance policy can do. The Terminal Illness Rider — which allows you to access up to 50% of your death benefit while still living if diagnosed with a terminal illness — is included free on every AIL policy and is one of the most valuable features most policyholders never know exists.',
+          'Other riders — Waiver of Premium, Guaranteed Insurability, Accidental Death — can dramatically enhance your policy\'s value for a small additional premium.',
+        ],
+      },
+      {
+        heading: 'Mistake 7: Never Reviewing Coverage After Major Life Changes',
+        paragraphs: [
+          'The policy that made sense when you were single at 24 may be completely inadequate at 34 with a spouse, two children, and a mortgage. Life insurance needs to be reviewed when major life events occur: marriage, divorce, the birth of a child, purchasing a home, a significant income increase, or the death of a dependent.',
+          'A 20-minute annual review with your agent is all it takes to make sure your coverage still matches your life.',
+        ],
+      },
+    ],
+  },
+
+  'free-add-coverage-indiana': {
+    title: 'How to Get $2,000 in Free AD&D Coverage in Indiana',
+    excerpt: 'There\'s a free membership benefit that most Indiana families have never heard of — including real accidental death coverage, a prescription discount card, and a legal Will kit. No purchase required.',
+    date: 'May 14, 2026',
+    readTime: '4 min read',
+    category: 'Indiana · Membership',
+    webinarSlug: 'free-membership-benefits',
+    webinarTitle: 'Free Membership Benefits',
+    sections: [
+      {
+        heading: 'What the Free Membership Actually Includes',
+        paragraphs: [
+          'American Income Life offers a free membership tier available to Indiana residents that includes several tangible benefits — at no cost and with no purchase required.',
+          'The membership includes a prescription discount card that can reduce the cost of medications at participating pharmacies, a Family Guide to help organize the documents and account information your family would need to manage your affairs, and a legally-guided Will kit that walks you through creating a valid personal will.',
+          'It also includes $2,000 in Accidental Death & Dismemberment coverage — a real insurance benefit that pays a death benefit to your beneficiary if you die as the result of a covered accident.',
+        ],
+        bullets: [
+          '$2,000 Accidental Death & Dismemberment coverage',
+          'Prescription discount card for reduced medication costs',
+          'Family Guide to organize important documents and wishes',
+          'Legally-guided Will kit — create your will at no cost',
+        ],
+      },
+      {
+        heading: 'What AD&D Coverage Actually Means',
+        paragraphs: [
+          'Accidental Death & Dismemberment insurance pays a benefit when death or a covered serious injury results from an accident — a car accident, a fall, or another covered event. It does not cover death from illness or natural causes.',
+          'The $2,000 benefit included in the free membership is not a substitute for a full life insurance policy. But as a free benefit, it provides a real layer of protection that most families simply don\'t have in place.',
+          'For Indiana residents who do not yet have any life insurance, the free membership is a meaningful starting point — and the Will kit alone is worth the 20 minutes it takes to get enrolled.',
+        ],
+      },
+      {
+        heading: 'Why This Exists and What It Isn\'t',
+        paragraphs: [
+          'The free membership is not a bait-and-switch. The benefits are real, they cost you nothing, and you are under no obligation to purchase additional coverage. American Income Life offers this tier because getting a licensed agent in front of families who need coverage protection is good for everyone — and the free benefits create genuine value in the meantime.',
+          'That said, $2,000 in AD&D coverage is not a complete financial plan for most families. It doesn\'t replace income, pay off a mortgage, or fund your children\'s education. For families who review their full situation, there are usually gaps worth addressing — and a conversation about those gaps costs nothing.',
+        ],
+      },
+      {
+        heading: 'How to Get Enrolled',
+        paragraphs: [
+          'Getting access to the free membership starts with a brief conversation with a licensed agent who can verify your eligibility and walk you through what\'s included. There is no application fee, no credit check, and no obligation to purchase additional coverage.',
+          'A free Zoom consultation takes about 20 minutes. By the end of it, you\'ll have the free membership benefits in place, your Will kit access, and a clear picture of what additional coverage — if any — makes sense for your family.',
+        ],
+      },
+    ],
+  },
+};
+
 export const POST_SLUGS = Object.keys(POSTS);
